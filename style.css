@@ -1,0 +1,386 @@
+:root {
+  --hovere: #b266ff;         /* Light purple for hover */
+  --hover: #9D4EDD;          /* Main purple background */
+  --bg: #f8f4ff;             /* Light lavender background */
+  --h1: #2e003e;             /* Deep purple for headings */
+  --text: #3f1d57;           /* Body text purple */
+  --menstual: #7b2cbf;       /* Menstrual phase */
+  --follicular: #9d4edd;     /* Follicular phase */
+  --ovulation: #c77dff;      /* Ovulation phase */
+  --luteal: #5a189a;         /* Luteal phase */
+}
+
+/* DESKTOP */
+html {
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg);
+  font-family: "Crimson Pro", serif;
+  font-weight: 300;
+  color: var(--text);
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-logo {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cicly {
+  text-decoration: none;
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: var(--h1);
+}
+
+.r {
+  width: 74%;
+  border-radius: 24px 24px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar {
+  background-color: var(--hover);
+  border-radius: 24px 24px 0 0;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  width: 70%;
+  justify-content: space-around;
+}
+
+.nav-link {
+  color: var(--bg);
+  font-size: x-large;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.curiosity {
+  width: 25%;
+  background-color: var(--hover);
+  border-radius: 24px 24px 0 0;
+  font-size: x-large;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--bg);
+}
+
+#rfac {
+  display: none;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 24px;
+}
+
+.hero-section {
+  width: 74%;
+  background-color: var(--hover);
+  margin: 0;
+  border-radius: 24px 0 24px 24px;
+  font-size: large;
+  color: var(--bg);
+}
+
+.hero-top {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 24px;
+  justify-content: space-around;
+}
+
+#hero-bottom {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.hero-title {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  color: var(--bg);
+  width: 50%;
+}
+
+.fire {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  width: 35%;
+}
+
+main .curiosity {
+  font-size: large;
+  font-weight: 300;
+  margin: 0px;
+  border-radius: 0 0 24px 24px;
+}
+
+.text-box {
+  margin: 0 24px 24px 24px;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: var(--bg);
+  color: var(--text);
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+
+.curiosity-inner {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+#refresh {
+  border-radius: 16px;
+  background-color: var(--hovere);
+  max-width: fit-content;
+  padding: 8px 16px;
+  color: var(--bg);
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 8px var(--h1);
+}
+
+footer {
+  background-color: var(--hover);
+  font-family: "Crimson Pro", serif;
+  font-weight: 300;
+  color: var(--bg);
+  padding: 20px;
+  border-radius: 24px;
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer a {
+  color: var(--bg);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+label {
+  display: flex;
+  flex: 1;
+}
+
+.top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.search {
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.faq-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  margin-top: 24px;
+  border-radius: 24px;
+  background-color: var(--hover);
+  color: var(--bg);
+  padding: 20px;
+  width: 25%;
+  display: none;
+  min-width: 300px;
+}
+
+.card p {
+  background-color: var(--bg);
+  color: var(--text);
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.card a {
+  width: 100%;
+}
+
+.controls {
+  width: 100%;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 24px;
+  background: var(--hovere);
+  color: var(--bg);
+  font-size: x-large;
+  font-weight: 600;
+  box-shadow: 0 4px 8px var(--h1);
+}
+
+#search {
+  border: none;
+  padding: 20px;
+  border-radius: 24px;
+  background: var(--hover);
+  color: var(--bg);
+  font-size: large;
+  height: fit-content;
+  box-shadow: 0 4px 8px var(--h1);
+}
+
+.info-phases-desk {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-phases-mobile {
+  display: none;
+}
+
+.phase {
+  margin: 0 24px 24px 24px;
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow: 0 4px 8px var(--h1);
+  background-color: var(--hover);
+  color: var(--bg);
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+td {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.mestruale {
+  background-color: var(--menstual);
+  color: white;
+}
+
+.follicolare {
+  background-color: var(--follicular);
+  color: white;
+}
+
+.ovulazione {
+  background-color: var(--ovulation);
+  color: white;
+}
+
+.luteale {
+  background-color: var(--luteal);
+  color: white;
+}
+
+.result {
+  display: flex;
+  flex-direction: row;
+}
+
+.result-inner {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.disclaimer {
+  border-radius: 24px;
+  background-color: var(--hover);
+  color: var(--bg);
+  padding: 20px;
+  display: none;
+}
+
+/* TABLET */
+@media (max-width: 1080px) {
+   .s {
+    display: none;
+  }
+
+  .icon-hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    gap: 12px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .icon-hamburger span {
+    height: 3px;
+    background-color: var(--h1);
+    width: 36px;
+  }
+
+  .nav-bar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 61px;
+    right: 1%;
+    margin-right: 24px;
+    width: fit-content;
+    height: 0vh;
+    overflow: hidden;
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+  }
+
+   .nav-bar a {
+    color: var(--bg);
+    display: block;
+    padding: 20px;
+    font-size: 15px;
+    background-color: var(--hover);
+  }
+}  /* closes the media query */

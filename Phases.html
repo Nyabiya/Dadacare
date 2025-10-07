@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" >
+        <title>Phases</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+            
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="custom-body">
+        <div class="top">
+            <a href="index.html" class="cicly">Dadacare</a>
+            <p class="nav-link" style="margin-left: 24px;">Dive into menstrual phases</p>
+            <label></label>
+            <a class="text-box" style="font-size: x-large; font-weight: 600; background-color: #ff71ab ; color: #222222; text-decoration: none; box-shadow: 0 4px 8px var(--h1);" href="Calculator.html">See what phase of your cycle you are in</a>
+        </div>
+        <p style="font-size: large;">
+          The menstrual cycle is a natural process that regulates the fertility of those who have a uterus.  
+          It lasts on average about 28 days, but it can vary from person to person.  
+          During this time, the body prepares each month for a possible pregnancy.
+        </p>
+        <div class="info-phases-desk">
+            <section style="width: 30%;">
+                <div class="phase" id="luteal">
+                    <h3>Luteal phase</h3>
+                    <p>
+                      After ovulation, the body produces progesterone to prepare the uterus for a possible pregnancy.  
+                      If fertilization does not occur, hormone levels drop and a new cycle begins with menstruation.
+                    </p>
+                    <p><strong>Common symptoms:</strong> breast tenderness, bloating, irritability, sugar cravings, premenstrual syndrome (PMS).</p>
+                    <p><strong>Tips:</strong> focus on relaxing activities, get enough sleep, eat complex carbohydrates (whole grains, potatoes, legumes), and reduce caffeine and refined sugars.</p>
+                </div>
+                <div class="phase" id="ovulation">
+                    <h3>Ovulatory phase</h3>
+                    <p>
+                      Around mid-cycle, the mature egg is released from an ovary: this is the moment of peak fertility.  
+                      Some people may notice changes in vaginal discharge or a slight abdominal twinge.
+                    </p>
+                    <p><strong>Common symptoms:</strong> increased libido, glowing skin, greater confidence and energy.</p>
+                    <p><strong>Tips:</strong> perfect for social and creative activities. Eat fruit, vegetables, and foods rich in zinc and B vitamins to support energy.</p>
+                </div>
+            </section style="width: 30%;">
+            <section>
+                <img id="c_normal" src="img/Calendar (1).jpg" style=" height: 500px ; width: 500px;">
+                <img id="c_menstrual" src="img/Calendar (2).jpg" style=" height: 500px ; width: 500px; display: none;">
+                <img id="c_follicular" src="img/Calendar (3).jpg" style=" height: 500px ; width: 500px; display: none;">
+                <img id="c_ovulatory" src="img/Calendar (4).jpg" style=" height: 500px ; width: 500px; display: none;">
+                <img id="c_luteal" src="img/Calendar (6).jpg" style=" height: 500px ; width: 500px; display: none;">
+            </section>
+            <section  style="width: 30%;">
+                <div class="phase" id="menstrual" >
+                    <h3>Menstrual phase</h3>
+                    <p>
+                      This is when menstruation occurs: the lining of the uterus (endometrium) is shed, causing the blood flow.  
+                      It can last from 3 to 7 days.
+                    </p>
+                    <p><strong>Common symptoms:</strong> abdominal cramps, fatigue, headaches, mood swings.</p>
+                    <p><strong>Tips:</strong> rest, warm herbal teas, iron-rich foods (spinach, legumes, lean meat), and constant hydration. Gentle stretching or yoga can help reduce pain.</p>
+                </div>
+                <div class="phase" id="follicular">
+                    <h3>Follicular phase</h3>
+                    <p>
+                      In this phase, which begins on the first day of menstruation and lasts until ovulation, the body stimulates the growth of follicles in the ovaries.  
+                      One of these will mature and become the egg to be released.
+                    </p>
+                    <p><strong>Common symptoms:</strong> increased energy, better concentration, more stable mood.</p>
+                    <p><strong>Tips:</strong> this is the ideal time for more intense physical activities, starting new projects, and following a diet rich in protein and fresh vegetables.</p>
+                </div>   
+            </section>
+        </div> 
+        <div class="info-phases-mobile">
+            <div class="select">
+                <div class="mobile_cicly" style="display: flex; justify-content: center;">
+                    <img id="m_c_normal" src="img/Calendar (1).jpg" style=" height: 400px ; width: 400px;">
+                    <img id="m_c_menstrual" src="img/Calendar (2).jpg" style=" height: 400px ; width: 400px; display: none;">
+                    <img id="m_c_follicular" src="img/Calendar (3).jpg" style=" height: 400px ; width: 400px; display: none;">
+                    <img id="m_c_ovulatory" src="img/Calendar (4).jpg" style=" height: 400px ; width: 400px; display: none;">
+                    <img id="m_c_luteal" src="img/Calendar (6).jpg" style=" height: 400px ; width: 400px; display: none;">
+                </div>
+                <div class="inner-select">
+                    <div >
+                        <h3 class="phase" style="align-content: center;" id="m_menstrual">Menstrual phase</h3>
+                        <h3 class="phase" style="align-content: center;" id="m_follicular">Follicular phase</h3>
+                    </div>
+                    <div >
+                        <h3 class="phase" style="align-content: center;" id="m_ovulation">Ovulatory phase</h3>
+
+                        <h3 class="phase" style="align-content: center;" id="m_luteal">Luteal phase</h3>
+                    </div> 
+                </div>   
+            </div>
+            <div style="width: 100%;">
+                <div class="phase" id="menstrual_mobile">
+                    <p>This is when menstruation occurs: the lining of the uterus (endometrium) is shed, causing the blood flow.  It can last from 3 to 7 days.</p>
+                    <p><strong>Common symptoms:</strong> abdominal cramps, fatigue, headaches, mood swings.</p>
+                    <p><strong>Tips:</strong> rest, warm herbal teas, iron-rich foods (spinach, legumes, lean meat), and constant hydration. Gentle stretching or yoga can help reduce pain.</p>
+                </div>
+                <div class="phase" id="follicular_mobile">
+                    <p>
+                      In this phase, which begins on the first day of menstruation and lasts until ovulation, the body stimulates the growth of follicles in the ovaries.  
+                      One of these will mature and become the egg to be released.
+                    </p>
+                    <p><strong>Common symptoms:</strong> increased energy, better concentration, more stable mood.</p>
+                    <p><strong>Tips:</strong> this is the ideal time for more intense physical activities, starting new projects, and following a diet rich in protein and fresh vegetables.</p>
+                </div>
+                <div class="phase" id="ovulation_mobile">
+                    <p>
+                      Around mid-cycle, the mature egg is released from an ovary: this is the moment of peak fertility.  
+                      Some people may notice changes in vaginal discharge or a slight abdominal twinge.
+                    </p>
+                    <p><strong>Common symptoms:</strong> increased libido, glowing skin, greater confidence and energy.</p>
+                    <p><strong>Tips:</strong> perfect for social and creative activities. Eat fruit, vegetables, and foods rich in zinc and B vitamins to support energy.</p>
+                </div>
+                <div class="phase" id="luteal_mobile">
+                    <p>After ovulation, the body produces progesterone to prepare the uterus for a possible pregnancy. If fertilization does not occur, hormone levels drop and a new cycle begins with menstruation.
+                    </p>
+                    <p><strong>Common symptoms:</strong> breast tenderness, bloating, irritability, sugar cravings, premenstrual syndrome (PMS).</p>
+                    <p><strong>Tips:</strong> focus on relaxing activities, get enough sleep, eat complex carbohydrates (whole grains, potatoes, legumes), and reduce caffeine and refined sugars.</p>             
+                </div>
+            </div>
+        </div> 
+        <script src="phases.js"></script>  
+    </body>
+    <footer>
+        <p>© 2025 Dadacare</p>
+        <p>Made with ❤ by Nyabiya</p>
+        <p><a href="form.html" style="text-decoration: none; color: #222222;">Contact me</a></p>
+    </footer>
+</html>

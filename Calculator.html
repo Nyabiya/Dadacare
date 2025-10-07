@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" >
+        <title>Calculator</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+            
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="custom-body">
+        <div class="top">
+            <a href="index.html" class="cicly">Dadacare</a>
+            <p class="nav-link" style="margin-left: 24px;">Discover Your Cycle Phase</p>
+            <label></label>
+            <a class="text-box" style="font-size: x-large; font-weight: 600; background-color: #ff71ab ; color: #222222; text-decoration: none; box-shadow: 0 4px 8px var(--h1);" href="Phases.html">Explore all the Phases of the Menstrual Cycle</a>
+        </div>
+        <div style=" text-align: center;">
+            <p>Last period start date:
+                <input type="date" id="lastPeriod">
+            </p>
+            <p>Average cycle length if you know it (days):
+                <input type="number" id="cycleLength" value="28">
+            </p>
+            <button onclick="calculateCycle()">Calculate</button>
+        </div>
+        <div style=" display:flex; flex-direction: column;">
+            <div style="width: 100%; display:flex; justify-content: center; ">
+                    <p id="disclaimer" class="disclaimer"></p>
+                    <h3 id="phaseResult" style="font-size: x-large;"></h3>
+            </div>
+            <div class="result">
+                <section class="result-inner">
+                    <div id="calendar" style="font-size: x-large;"></div>
+                </section>
+                <section class="result-inner">
+                    <p id="nb" class="disclaimer" style="width: 50%;"></p>
+                </section>
+            </div>
+        </div>
+        <script src="calculator.js"></script>  
+    </body>
+    <footer>
+        <p>© 2025 Dadacare</p>
+        <p>Made with ❤ by Nyabiya</p>
+        <p><a href="form.html" style="text-decoration: none; color: #222222;">Contact me</a></p>
+    </footer>
+</html>
