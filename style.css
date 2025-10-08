@@ -36,7 +36,7 @@ nav {
   justify-content: space-around;
 }
 
-.cicly {
+.Dadacare {
   text-decoration: none;
   font-size: 50px;
   font-family: "Montserrat", sans-serif;
@@ -384,3 +384,4 @@ td {
     background-color: var(--hover);
   }
 }  /* closes the media query */
+
